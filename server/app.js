@@ -1,4 +1,4 @@
-const config = require('../config');
+// const config = require('../config');
 require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
@@ -15,14 +15,14 @@ app.post('/send_email', (req, res) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: config.emailUser, // Use environment variable for email user
-      pass: config.emailPass, // Use environment variable for email password
+      user: process.env.emailUser, // Use environment variable for email user
+      pass: process.env.emailPass, // Use environment variable for email password
     },
   });
 
   const mailOptions = {
     from: email, // Use the email from the client's form as the sender
-    to: config.emailUser, // Change this to the recipient's email address
+    to: process.env.emailUser, // Change this to the recipient's email address
     subject: 'Письмо отправленное через node.js',
     text: `Имя: ${name}\nEmail: ${email}\nСообщение: ${message}`,
   };
