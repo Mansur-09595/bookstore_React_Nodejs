@@ -19,7 +19,7 @@ const Form = () => {
       message,
     };
 
-    fetch("http://localhost:3001/send_email", {
+    fetch("https://taymaskha.onrender.com/send_email", {
       method: "POST",
       body: JSON.stringify(mailOptions),
       headers: {
