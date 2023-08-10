@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 65px;
+    background-color: rgb(236, 236, 236);
+    .author-name{
+      font-family: "Ysabeau SC", sans-serif;
+    }
+    .titles{
+      margin: 12px 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .title{
+          font-family: "Tektur", cursive;
+          color: #dea92c;
+          padding: 10px;
+          font-size: 20px;
+          text-decoration: inherit;
+          transition: font-family 1.5s ease;
+      }
+      .title:hover {
+        color: black;
+        font-family: "Rubik Glitch", cursive;
+        transition: font-family 1.5s ease;
+      }
+    }
+  }
+  

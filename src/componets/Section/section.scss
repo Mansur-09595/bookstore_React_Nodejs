@@ -1,0 +1,80 @@
+.section {
+  background-image: url("../../img/background2.jpg");
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px;
+  background-color: #96c9b491;
+  .section-left {
+    padding: 20px;
+    border-radius: 20px;
+
+    background: #ffffffe6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    height: 100%;
+    .title-book {
+      text-align: center;
+      font-family: "Cormorant Unicase", serif;
+      margin: 0;
+      line-height: 80px;
+      font-size: 48px;
+      font-weight: 600;
+      > span {
+        color: #dea92c;
+      }
+    }
+    .about-book {
+      font-family: "Tektur", cursive;
+      text-align: justify;
+    }
+    .buttons {
+      display: flex;
+    }
+  }
+  .section-right {
+    position: relative;
+    .books-wrap {
+      position: relative;
+      display: flex;
+      margin: 0 auto;
+      min-height: 600px;
+      max-width: 600px;
+      .book-front {
+        z-index: 2;
+        box-shadow: 0 10px 12px #00000094;
+        min-height: 600px;
+        max-width: 600px;
+        position: relative;
+      }
+
+      .book-back {
+        position: absolute;
+        bottom: 70px;
+        left: 170px;
+        z-index: 1;
+        box-shadow: 0 10px 12px #00000094;
+        min-height: 600px;
+        max-width: 600px;
+      }
+
+      .book-front,
+      .book-back {
+        transition: transform 0.5s ease;
+        -moz-transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+      }
+    }
+  }
+  .section-right.clicked .book-front {
+    z-index: 1;
+    transform: translateX(20%);
+  }
+
+  .section-right.clicked .book-back {
+    z-index: 2;
+    transform: translateX(-40%);
+  }
+}

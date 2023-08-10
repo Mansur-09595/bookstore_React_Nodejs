@@ -1,0 +1,25 @@
+.block4 {
+    padding: 100px;
+    margin-top: -140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    .publish {
+        font-family: 'Rubik Glitch', cursive;
+        font-size: 4em;
+        letter-spacing: 19px;
+    }
+    .publish-about{
+        margin-top: 30px;
+        display: flex;
+        max-width: 71em;
+        flex-direction: column;
+        align-items: center;
+        .text {
+            font-family: 'Tektur', cursive;
+            font-size: 20px;
+        }
+    }
+}

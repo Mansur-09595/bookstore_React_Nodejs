@@ -1,0 +1,27 @@
+.content {
+    margin-top: -4px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    padding: 0 70px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        padding: 60px;
+        font-size: 85px;
+        font-family: "Ysabeau SC", sans-serif;
+        text-align: justify;
+        letter-spacing: 40px;
+        line-height: 90px;
+    }
+    .page-picture {
+        width: auto;
+        .page-img {
+            width: 33%;
+            border-radius: 13px;
+            padding: 2.5px;
+        }
+    }
+}

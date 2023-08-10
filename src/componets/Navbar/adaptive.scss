@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      min-height: auto;
+      
+      .author-name {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+      }
+      
+      .titles {
+        margin: 10px 0;
+        
+        .title {
+          font-size: 16px;
+          padding: 8px;
+          text-align: center;
+          transition: font-family 1.5s ease, color 0.5s ease;
+          
+          &:hover {
+            color: black;
+            font-family: "Rubik Glitch", cursive;
+          }
+        }
+      }
+    }
+  }
+  

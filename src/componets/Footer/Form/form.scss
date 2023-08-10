@@ -1,0 +1,38 @@
+.block8 {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fafafaa6;
+    border-radius: 8px;
+    max-width: 400px;
+  
+    h1 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+      }
+  
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+        font-size: 1rem;
+      }
+  
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+    }
+  }
+  

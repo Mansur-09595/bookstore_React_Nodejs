@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+    .block4 {
+      padding: 50px;
+      margin-top: -80px;
+      
+      .publish {
+        font-size: 2.1em;
+        letter-spacing: 10px;
+      }
+      
+      .publish-about {
+        margin-top: 20px;
+        max-width: 100%;
+        
+        .text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
