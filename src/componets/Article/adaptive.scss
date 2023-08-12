@@ -1,3 +1,33 @@
+@media (min-width: 769px) and (max-width: 1150px) {
+  .color {
+    .article {
+      background-color: #f1f0f6;
+      margin-right: 10%;
+      width: auto;
+      .author-picture {
+        padding: 15px 0;
+        text-align: center;
+        >img {
+          max-width: 360px;
+          border-radius: 0;
+        }
+      }
+      .author-personal {
+        margin: 20px 0;
+      }
+      .author-fullname {
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .author-achieve {
+        width: auto;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 768px) {
     .color {
       .article {
@@ -20,11 +50,13 @@
           margin: 20px;
           
           .author-fullname {
+            text-align: center;
             font-size: 2.4rem;
             margin-bottom: 20px;
           }
           
           .author-achieve {
+            text-align: justify;
             width: auto;
           }
         }

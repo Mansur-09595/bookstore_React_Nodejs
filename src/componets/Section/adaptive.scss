@@ -1,43 +1,69 @@
-// addaptive.scss
-
-@media (max-width: 768px) {
-    .section {
-      flex-direction: column;
-      padding: 50px;
+@media (min-width: 769px) and (max-width: 1336px) {
+  .section {
+    padding: 50px;
+    
+    .section-left {
+      width: 450px;
+      padding: 10px;
+      margin-bottom: 100px;
       
-      .section-left {
-        max-width: 100%;
-        padding: 10px;
-        margin-bottom: 100px;
-        
-        .title-book {
-          font-size: 36px;
-          line-height: 60px;
-        }
+      .title-book {
+        font-size: 36px;
+        line-height: 60px;
       }
-      
-      .section-right {
-        margin: 20px 40px 0 0; 
-        .books-wrap {
-          min-height: auto;
-          max-width: 100%;
-
-          .book-back {
-            bottom: 37px;
-            left: 80px;
-          }
-          
-          .book-front, .book-back {
-            min-height: auto;
-            max-width: 100%;
-            box-shadow: none;
-          }
+    }
+    
+    .section-right {
+      margin: 80px 20px 0 20px; 
+      .books-wrap {
+        height: auto;
+        .book-back {
+          bottom: 45px;
+          left: 55px;
         }
         
-        &.clicked .book-front, &.clicked .book-back {
-          transform: none;
+        .book-front, .book-back {
+          height: auto;
+          box-shadow: none;
         }
       }
     }
   }
-  
+}
+
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 50px;
+    
+    .section-left {
+      max-width: 100%;
+      padding: 10px;
+      margin-bottom: 100px;
+      
+      .title-book {
+        font-size: 36px;
+        line-height: 60px;
+      }
+    }
+    
+    .section-right {
+      margin: 20px 40px 0 0; 
+      .books-wrap {
+        min-height: auto;
+        max-width: 100%;
+        
+        .book-back {
+          bottom: 37px;
+          left: 80px;
+        }
+        
+        .book-front, .book-back {
+          min-height: auto;
+          max-width: 100%;
+          box-shadow: none;
+          }
+        }
+      }
+    }
+  }

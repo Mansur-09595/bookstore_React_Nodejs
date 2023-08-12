@@ -11,3 +11,49 @@ a {
 .App {
   width: 100%;
 }
+
+.Box {
+  background-color: #b9a485;
+}
+
+.loads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./img/taymaskha.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100%;
+
+  /* Добавляем анимацию угасания с помощью keyframes */
+  animation: fadeOut 3s ease-in-out forwards; /* Продолжительность 2 секунды */
+}
+
+/* Определяем анимацию с названием fadeOut */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Начальная прозрачность */
+  }
+  100% {
+    opacity: 0; /* Прозрачность после анимации */
+  }
+}
+
+.loads h1 {
+  text-align: center;
+  font-size: 8vw;
+  font-family: "Tektur", cursive;
+  color: white;
+  animation: fadeIn 3s ease-in-out infinite; /* Анимация появления для текста */
+}
+
+/* Определяем анимацию с названием fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Начальная прозрачность */
+  }
+  100% {
+    opacity: 1; /* Прозрачность после анимации */
+  }
+}

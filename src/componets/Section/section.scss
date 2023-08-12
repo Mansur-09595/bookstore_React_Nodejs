@@ -40,23 +40,23 @@
       display: flex;
       margin: 0 auto;
       min-height: 600px;
-      max-width: 600px;
+      max-width: 100%;
       .book-front {
         z-index: 2;
         box-shadow: 0 10px 12px #00000094;
         min-height: 600px;
-        max-width: 600px;
+        max-width: 100%;
         position: relative;
       }
 
       .book-back {
         position: absolute;
         bottom: 70px;
-        left: 170px;
+        left: 77px;
         z-index: 1;
         box-shadow: 0 10px 12px #00000094;
         min-height: 600px;
-        max-width: 600px;
+        max-width: 100%;
       }
 
       .book-front,
@@ -75,6 +75,6 @@
 
   .section-right.clicked .book-back {
     z-index: 2;
-    transform: translateX(-40%);
+    transform: translateX(-16%);
   }
 }

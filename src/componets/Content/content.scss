@@ -9,14 +9,15 @@
     justify-content: center;
     align-items: center;
     .title {
-        padding: 60px;
-        font-size: 85px;
+        padding: 5vw 0;
+        font-size: 5vw;
         font-family: "Ysabeau SC", sans-serif;
         text-align: justify;
-        letter-spacing: 40px;
-        line-height: 90px;
-    }
+        letter-spacing: 4.1vw;
+        line-height: 6vw;
+      }
     .page-picture {
+        display: flex;
         width: auto;
         .page-img {
             width: 33%;
